@@ -46,7 +46,7 @@ class ForgotPassword extends Component{
       body: JSON.stringify(data),
       headers: config.headers_base})
       .then(FetchResponses.processResponse)
-      .then(FetchResponses.successResponse)
+      .then(ForgotPassword.successResponse)
       .catch(FetchResponses.errorResponse)
   };
 

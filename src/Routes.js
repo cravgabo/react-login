@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {BrowserRouter, Route} from 'react-router-dom';
 import App from './components/App';
-import Reset from "./components/Reset";
+import ResetPassword from "./components/ResetPassword";
 import User from "./components/User";
 
 
@@ -12,7 +12,7 @@ class BasicRoute extends Component {
         <div>
           <Route path="/" exact component={App}/>
           <Route path="/user/" exact component={User}/>
-          <Route path="/reset/:uid&:token" component={Reset}/>
+          <Route path="/reset/:uid&:token" component={ResetPassword}/>
         </div>
       </BrowserRouter>
     );

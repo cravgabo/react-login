@@ -36,6 +36,7 @@ const combine = {
   "add_user": config.host + "user/",
   "change_pass": config.host + "v1/password/change/",
   "reset_pass": config.host + "v1/password/reset/",
+  "confirm_reset_pass": config.host + "v1/password/reset/confirm/",
 };
 
 export default jsonConcat(config, combine);
